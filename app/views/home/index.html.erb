@@ -1,0 +1,20 @@
+<div class="container" align="center">
+<h1>Hi what do you want to Tweet</h1>
+<br>
+<%= form_for :tweet do |f| %>
+
+
+  <div class="field">
+    <%= f.label :Your_tweet_here %><br />
+    <%= f.text_area :content, autofocus: true %>
+  </div>
+<br>
+  <div class="actions">
+    <%= f.submit "Tweet that" %>
+  </div>
+  <br>
+<% end %>
+
+
+
+</div>
